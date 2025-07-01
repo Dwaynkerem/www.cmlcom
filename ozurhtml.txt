@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Gamze, Sana Bir Sözüm Var...</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #ffafbd, #ffc3a0);
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      padding: 50px;
+      color: #333;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.4em;
+      margin-bottom: 40px;
+    }
+
+    .button {
+      padding: 15px 30px;
+      font-size: 1.2em;
+      margin: 10px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .yes {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    .yes:hover {
+      background-color: #45a049;
+    }
+
+    .no {
+      background-color: #f44336;
+      color: white;
+      pointer-events: none;
+      opacity: 0.4;
+    }
+
+    #result {
+      margin-top: 30px;
+      font-size: 1.6em;
+      color: #800000;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Gamze, Sana Bir Sözüm Var...</h1>
+  <p>Bu küçük sayfa, büyük bir özrü anlatıyor. Lütfen beni affet.</p>
+
+  <button class="button yes" onclick="showMessage()">Evet</button>
+  <button class="button no">Hayır</button>
+
+  <div id="result"></div>
+
+  <audio autoplay loop>
+    <source src="https://dl.dropboxusercontent.com/s/x0z9pdwmfsl2bdc/Sade%20-%20Lovers%20Rock.mp3" type="audio/mpeg">
+    Tarayıcınız müziği desteklemiyor.
+  </audio>
+
+  <script>
+    function showMessage() {
+      document.getElementById('result').innerHTML = "Karıcım beni affet, kocan seni çok seviyor.<br>Saygılarımla,<br>Kerem";
+    }
+  </script>
+</body>
+</html>
